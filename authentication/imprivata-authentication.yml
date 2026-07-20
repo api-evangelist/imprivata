@@ -1,0 +1,37 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.imprivata.com/onesign/content/topics/onesign/proveid/proveid_webapi.html
+docs: https://docs.imprivata.com/
+notes: >-
+  Imprivata does not publish a machine-readable OpenAPI/WSDL specification for
+  its public developer surface, so this profile is captured from the product
+  documentation rather than derived from a spec. Imprivata's APIs are deployed
+  on customer/instance hosts, not a single public API host. Auth models below
+  reflect what the docs describe for each API.
+summary:
+  types: [apiKey, http]
+  api_key_in: [header]
+schemes:
+- name: proveid-web-api-access
+  api: OneSign ProveID Web API
+  type: apiKey
+  in: application
+  description: >-
+    Access to the OneSign ProveID Web API (and ProveID Embedded) is gated by an
+    administrator in the Imprivata Admin Console under API Access > ProveID - API
+    Access ("Allow full API access via ProveID Web API and ProveID Embedded"),
+    enabled per integrated product. Vendor integrations authenticate against the
+    customer's OneSign appliance to perform strong-authentication and identity
+    lookups. Provisioning and credentials are issued through the Imprivata
+    Developer / Access Management Partner program.
+  docs: https://docs.imprivata.com/onesign/content/topics/onesign/proveid/proveid_webapi.html
+- name: pam-rest-token
+  api: Imprivata Privileged Access Management REST API
+  type: http
+  scheme: bearer
+  description: >-
+    The Privileged Access Management (PAM, formerly Xton Access Manager) REST
+    API is exposed per instance at https://<pam-host>:8443/xtam/api-docs/ and
+    uses token-based authentication for programmatic access to PAM records and
+    operations.
+  docs: https://help.xtontech.com/content/developers/api-documentation.htm
