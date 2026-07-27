@@ -1,21 +1,54 @@
 aid: imprivata
 name: Imprivata
-description: Imprivata is a company surfaced as a portfolio company of general-catalyst, sapphire-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Imprivata is a digital identity and access management company built for
+  healthcare and other mission-critical industries. Its platform delivers
+  passwordless and multifactor authentication, single sign-on (Enterprise Access
+  Management, formerly OneSign), privileged access management, mobile and shared
+  device access (Mobile Access Management, formerly GroundControl), and drug
+  enforcement e-prescribing (DEA-EPCS) workflows so that clinicians, partners,
+  and increasingly AI agents can securely access systems and data without
+  slowing down crucial work. Imprivata exposes integration surfaces for software
+  and hardware vendors through the OneSign ProveID Web API and ProveID SDK and a
+  Privileged Access Management REST API, governed through its Access Management
+  Partner (developer) program. These APIs are deployed on customer/instance
+  infrastructure rather than a single public cloud host, so Imprivata publishes
+  integration documentation and a developer partner program rather than a hosted
+  public API portal.
 url: https://raw.githubusercontent.com/api-evangelist/imprivata/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - general-catalyst
 - sapphire-ventures
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enriched-from-public-surface
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://www.imprivata.com/themes/imprivata/images/logo_v2.svg
 tags:
 - Company
+- Identity
+- Access Management
+- Authentication
+- Single Sign-On
+- Privileged Access Management
+- Healthcare
+- Security
+- Passwordless
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +58,32 @@ maintainers:
 common:
 - type: Website
   url: https://www.imprivata.com/
+- type: DeveloperPortal
+  url: https://www.imprivata.com/developers
+- type: Documentation
+  url: https://docs.imprivata.com/
+- type: APIReference
+  url: https://docs.imprivata.com/onesign/content/topics/onesign/proveid/proveid_webapi.html
+- type: Blog
+  url: https://www.imprivata.com/blog
+- type: GitHubOrganization
+  url: https://github.com/imprivata-idg
+- type: Support
+  url: https://www.imprivata.com/support
+- type: Compliance
+  url: https://www.imprivata.com/company/trust-and-security
+- type: PrivacyPolicy
+  url: https://www.imprivata.com/legal/privacy-policy
+- type: TermsOfService
+  url: https://www.imprivata.com/legal/imprivata-master-cloud-services-agreement
+- type: Authentication
+  url: authentication/imprivata-authentication.yml
+- type: TrustCenter
+  url: security/imprivata-trust-center.yml
+- type: DomainSecurity
+  url: security/imprivata-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

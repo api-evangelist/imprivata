@@ -1,0 +1,31 @@
+generated: '2026-07-19'
+method: probed
+source: live probes of imprivata.com hosts
+notes: >-
+  No /.well-known/ discovery documents were served on the public Imprivata web
+  hosts. Imprivata's APIs (OneSign ProveID Web API, Privileged Access Management
+  REST API, Mobile Access Management) are deployed on customer/instance hosts
+  rather than a single public API host, so no provider-wide well-known surface
+  exists. Absence recorded is valid data, not a gap to fabricate.
+hosts:
+- host: https://www.imprivata.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+- host: https://docs.imprivata.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+- host: https://security.imprivata.com
+  documents:
+  - {path: /.well-known/security.txt, status: 302}
+  - {path: /.well-known/openid-configuration, status: 302}
+  - {path: /.well-known/oauth-authorization-server, status: 302}
+  - {path: /.well-known/api-catalog, status: 302}
+  - {path: /.well-known/ai-plugin.json, status: 302}

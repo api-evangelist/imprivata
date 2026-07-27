@@ -1,0 +1,27 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.imprivata.com/company/trust-and-security
+url: https://www.imprivata.com/company/trust-and-security
+certifications:
+- SOC 2
+- ISO 27001:2022
+- ISO 27701:2019
+- HIPAA
+- HITECH
+- NIST
+- Cyber Essentials
+- Cyber Essentials Plus
+- DEA-EPCS (21 CFR part 1311)
+frameworks:
+- FIDO Alliance member
+notes: >-
+  Imprivata publishes its security and compliance posture on the Trust and
+  Security page. Certifications and attestations named on the page were captured
+  verbatim. No public security.txt, vulnerability disclosure program, or bug
+  bounty was found (2026-07-19). Imprivata is a digital identity and access
+  management vendor for healthcare and other mission-critical industries, so its
+  compliance program centers on healthcare (HIPAA/HITECH, DEA-EPCS) and general
+  information-security attestations (SOC 2, ISO 27001/27701).
+evidence:
+- source: https://www.imprivata.com/company/trust-and-security
+  keywords: [soc 2, iso 27001, iso 27701, hipaa, trust and security]

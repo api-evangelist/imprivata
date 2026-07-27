@@ -1,0 +1,14 @@
+{
+  "repo": "imprivata",
+  "feeds": [
+    {
+      "source": "https://docs.imprivata.com/onesign/content/topics/onesign/proveid/proveid_webapi.html",
+      "feed_url": "https://docs.imprivata.com/onesign/content/topics/onesign/proveid/proveid_webapi.html",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-07-25T15:00:33Z"
+}
